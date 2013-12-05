@@ -2,7 +2,6 @@ var record = 0;
 var last = 0;
 var output = document.querySelector('output');
 var button = document.querySelector('button');
-var na = output.textContent;
 var isTouchDevice =
 	('ontouchstart' in window) ||
 	!!(window.DocumentTouch && document instanceof DocumentTouch);
@@ -36,7 +35,7 @@ function tap(event) {
 
 function reset() {
 	record = last = 0;
-	output.textContent = na;
+	output.textContent = '';
 	wasFirstTapReleased = false;
 }
 
