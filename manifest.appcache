@@ -1,5 +1,11 @@
 CACHE MANIFEST
-#revision: 1
+#revision: 2
+
 index.html
 style.css
 script.js
+
+#icons:
+favicon.ico
+app-icon-152.png
+app-icon-196.png
