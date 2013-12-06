@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#revision: 3
+#revision: 4
 
 index.html
 style.css
@@ -10,3 +10,6 @@ favicon.ico
 app-icon-152.png
 app-icon-196.png
 tap.svg
+
+NETWORK:
+*
