@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#revision: 5
+#revision: 6
 
 index.html
 style.css
@@ -7,7 +7,7 @@ script.js
 
 #icons:
 favicon.ico
-app-icon-152.png
+apple-touch-icon-precomposed.png
 app-icon-196.png
 tap.svg
 
