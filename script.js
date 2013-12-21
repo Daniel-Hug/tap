@@ -13,6 +13,15 @@ function on(target, type, callback) {
 }
 
 
+// Refresh when there are updates:
+var appCache = window.applicationCache;
+on(appCache, 'updateready', function(e) {
+	if (appCache.status == appCache.UPDATEREADY) {
+		window.location.reload();
+	}
+});
+
+
 // Update record:
 var recordEl = document.getElementById('record');
 function setRecord(lapsed) {
@@ -82,18 +91,6 @@ function tapRelease() {
 // prevent default touch swipe action:
 on(document.body, 'touchmove', function(event) {
 	event.preventDefault();
-});
-
-
-// Listen for app updates:
-var appCache = window.applicationCache;
-on(appCache, 'updateready', function(e) {
-	if (appCache.status == appCache.UPDATEREADY) {
-		appCache.swapCache();
-		if (confirm('A new version of this webapp has been loaded. Update now?')) {
-			window.location.reload();
-		}
-	}
 });
 
 // Trigger repaint for viewport units:
