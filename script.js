@@ -80,7 +80,7 @@ on(window, tapEvent, function tap(event) {
 	}
 	last = now;
 	prevTapWasReleased = false;
-	window.addEventListener(tapReleaseEvent, tapRelease, false);
+	on(window, tapReleaseEvent, tapRelease);
 });
 
 function tapRelease() {
